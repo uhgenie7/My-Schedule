@@ -29,7 +29,7 @@
           </div>
         </div>
       </header>
-
+<!-- php line -->
       <?php
         include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/db_conn.php";
         $sql = "select * from schedule_progress";
