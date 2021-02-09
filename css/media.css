@@ -1,0 +1,51 @@
+@media screen and (max-width: 980px) {
+  .center {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  /* container style */
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .item:nth-child(1),
+  .item:nth-child(2),
+  .item:nth-child(3),
+  .item:nth-child(4),
+  .item:nth-child(5) {
+    grid-column: 1/3;
+  }
+
+  /* button box style */
+  .btns {
+    justify-content: center;
+  }
+
+  .btns button {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    grid-auto-rows: minmax(70px, auto);
+    padding: 20px 0 100px;
+  }
+  .circle-graph p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .subPfBar .pfImg {
+    font-size: 20px;
+  }
+}
