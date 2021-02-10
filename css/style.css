@@ -164,6 +164,11 @@ canvas {
   margin: 0 0 5px;
 }
 
+.subPfBar .pfContents p b {
+  font-weight: normal;
+  font-size: 12px;
+}
+
 .subPfBar .pfContents .rateNum {
   font-weight: 300;
   font-size: 12px;
@@ -190,14 +195,6 @@ canvas {
   border-radius: 0 10px 10px 0;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 80px;
-  background: #3b5999;
-}
-
 /* button box style */
 .btns {
   display: flex;
@@ -217,4 +214,20 @@ footer {
 
 .btns button:nth-child(2) {
   margin: 0 5px;
+}
+
+/* footer style */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #3b5999;
+  padding: 15px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+footer p {
+  color: #fff;
+  font-weight: 400;
 }

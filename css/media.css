@@ -5,6 +5,11 @@
 }
 
 @media screen and (max-width: 780px) {
+  .wrap {
+    /* height: auto; */
+    justify-content: start;
+  }
+
   /* container style */
   .container {
     width: 100%;
@@ -14,6 +19,7 @@
     grid-template-columns: 1fr;
     grid-gap: 5px;
     grid-auto-rows: minmax(100px, auto);
+    padding: 20px 0;
   }
 
   .item:nth-child(1),
@@ -33,12 +39,16 @@
     font-size: 12px;
     padding: 5px 20px;
   }
+
+  /* footer style */
+  footer {
+    position: relative;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .container {
     grid-auto-rows: minmax(70px, auto);
-    padding: 20px 0 100px;
   }
   .circle-graph p {
     font-size: 18px;
@@ -47,5 +57,13 @@
 
   .subPfBar .pfImg {
     font-size: 20px;
+  }
+
+  footer {
+    padding: 10px 15px;
+  }
+
+  footer p {
+    font-size: 12px;
   }
 }
