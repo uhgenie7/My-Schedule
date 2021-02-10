@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Schedule Dashboard</title>
+    <title>Input Board</title>
     <!-- awesome font -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
     <script src="https://kit.fontawesome.com/4d645dbcdc.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="/myschedule/css/reset.css" />
+    <link rel="stylesheet" href="/myschedule/css/style.css" />
+    <link rel="stylesheet" href="/myschedule/css/media.css" />
   </head>
   <body>
     <!-- all contents are wrapped inside wrap -->
@@ -34,14 +38,15 @@
       <!-- php line end-->
       <div class="center">
         <form action="/myschedule/php/update_rate.php" method="get" name="updateRate">
-          <div class="container">
+          <div class="inputContainer">
               <?php
                 include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/grid_up.php"
               ?>
+              <div class="item"></div>
               <!-- end of grid_up -->
               <div class="item btns">
                 <button type="submit">진행률 수정</button>
-                <button type="button" onclick="javascript:location.href='/myschedule/pages/input_form.php'">진행 상황 작성</button>
+                <button type="button">진행 상황 작성</button>
                 <button type="button">진행 상황 확인</button>
               </div>
               <!-- end of button -->

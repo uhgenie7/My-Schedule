@@ -1,6 +1,6 @@
 @media screen and (max-width: 980px) {
   .center {
-    padding: 0 15px;
+    padding: 0 25px;
   }
 }
 
@@ -47,6 +47,11 @@
 }
 
 @media screen and (max-width: 400px) {
+  /* header title style */
+  header h1 {
+    font-size: 16px;
+  }
+
   .container {
     grid-auto-rows: minmax(70px, auto);
   }
@@ -59,6 +64,12 @@
     font-size: 20px;
   }
 
+  /* button style */
+  .btns button {
+    width: 33.33%;
+  }
+
+  /* footer style */
   footer {
     padding: 10px 15px;
   }
