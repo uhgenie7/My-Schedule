@@ -2,10 +2,15 @@
   <p>Designed by MyDesign : my design@n-site.com</p>
 </footer>
 
-  <script>
-    const rateNum =document.querySelectorAll('.rateNum');
+<script>
+  const pathname = window.location.pathname;
+  const changeTit = document.querySelector('#title');
+  const rateNum =document.querySelectorAll('.rateNum');
 
-    for(let i=0; i<rateNum.length; i++){
-      console.log(rateNum[i]);
+  if(pathname.includes('input_form')){
+    changeTit.innerText="Input Schedule";
+      for(let i=0; i<rateNum.length; i++){
+      rateNum[i].readOnly=true;
     }
-  </script>
+  } 
+</script>
