@@ -29,7 +29,7 @@
           </div>
         </div>
       </header>
-<!-- php line -->
+      <!-- php line -->
       <?php
         include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/db_conn.php";
         $sql = "select * from schedule_progress";
@@ -44,20 +44,18 @@
       ?>
       <!-- container -->
       <div class="center">
-        <form action="" method="get" name="updateRate">
+        <form action="/myschedule/php/update_rate.php" method="get" name="updateRate">
           <div class="container">
               <div class="item">
                 <section class="graph-circle">
                   <div class="circle-graph-container">
-                    <div class="circle-graph easyPieChart" data-percent="60">
+                    <!-- <div class="circle-graph easyPieChart" data-percent="60">
                       <p>60%</p>
-                      <!-- <canvas width="269" height="269" style="width: 150px; height: 150px;"></canvas> -->
-                    </div>
+                    </div> -->
                   </div>
                   <p class="totalTit">Total Process Rates</p>
                 </section>
-              </div>
-            
+              </div>           
               <div class="item subPfBar">
                 <div class="pfImg">
                   <i class="fa fa-database"></i>
@@ -65,7 +63,7 @@
                 <div class="pfContents">
                   <h3>Database Project</h3>
                   <p>
-                    Progress Rate : <input type="text" value="<?=$sch_db?>" class="rateNum">% || Last Update : <b>2021-02-09</b>
+                    Progress Rate : <input type="text" value="<?=$sch_db?>" class="rateNum" name="sch_db_rate">% || Last Update : <b>2021-02-09</b>
                   </p>
                   <div class="pfBarBox">
                     <span class="pfBar"></span>
@@ -79,7 +77,7 @@
                 <div class="pfContents">
                   <h3>API Project</h3>
                   <p>
-                    Progress Rate : <input type="text" value="<?=$sch_api?>" class="rateNum">% || Last Update : <b>2021-02-09</b>
+                    Progress Rate : <input type="text" value="<?=$sch_api?>" class="rateNum" name="sch_api_rate">% || Last Update : <b>2021-02-09</b>
                   </p>
                   <div class="pfBarBox">
                     <span class="pfBar"></span>
@@ -93,7 +91,7 @@
                 <div class="pfContents">
                   <h3>Renewal Project</h3>
                   <p>
-                    Progress Rate :<input type="text" value="<?=$sch_ren?>" class="rateNum">% || Last Update : <b>2021-02-09</b>
+                    Progress Rate :<input type="text" value="<?=$sch_ren?>" class="rateNum" name="sch_ren_rate">% || Last Update : <b>2021-02-09</b>
                   </p>
                   <div class="pfBarBox">
                     <span class="pfBar"></span>
@@ -107,27 +105,34 @@
                 <div class="pfContents">
                   <h3>Web Planning Project</h3>
                   <p>
-                    Progress Rate : <input type="text" value="<?=$sch_pla?>" class="rateNum">% || Last Update : <b>2021-02-09</b>
+                    Progress Rate : <input type="text" value="<?=$sch_pla?>" class="rateNum" name="sch_pla_rate">% || Last Update : <b>2021-02-09</b>
                   </p>
                   <div class="pfBarBox">
                     <span class="pfBar"></span>
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="item btns">
+                <button type="submit">진행률 수정</button>
+                <button type="button">진행 상황 작성</button>
+                <button type="button">진행 상황 확인</button>
+              </div>
+          </div>
+          <!-- end of contatiner -->
         </form>
-        <div class="item btns">
-          <button type="button">진행률 수정</button>
-          <button type="button">진행 상황 작성</button>
-          <button type="button">진행 상황 확인</button>
-        </div>
       </div>
+      <!-- end of center -->
+       <footer>
+        <p>Designed by MyDesign : my design@n-site.com</p>
+      </footer>
     </div>
+    <!-- end of wrap -->
 
     <!-- script files load -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
     <script src="js/piechart.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/total_avg.js"></script>
   </body>
 </html>
