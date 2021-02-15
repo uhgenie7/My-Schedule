@@ -32,11 +32,13 @@
         $sch_pla=$sch_row['sch_pla'];
       ?>
       <!-- php line end-->
-      <div class="center">
+      <div class="center gridWrap">
         <form action="/myschedule/php/update_rate.php" method="get" name="updateRate">
           <div class="container">
+            <!-- total and each projects progress -->
               <?php
-                include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/grid_up.php"
+                include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/latest_date.php";
+                include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/grid_up.php";
               ?>
               <!-- end of grid_up -->
               <div class="item btns">
