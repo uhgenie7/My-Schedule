@@ -274,3 +274,47 @@ footer p {
 .inputContainer .subPfBar .pfContents .rateNum:focus {
   border: none;
 }
+
+/* input form style */
+.item.inputBox {
+  padding: 10px;
+}
+
+.item.inputBox .projectBox {
+  display: flex;
+  width: 100%;
+}
+
+.item.inputBox .projectCate {
+  width: 30%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  outline: 0;
+  padding: 5px;
+  font-family: "Noto Sans KR";
+}
+
+.item.inputBox .projectTit {
+  width: 70%;
+  height: 40px;
+  border: 1px solid #ccc;
+  margin-left: 2px;
+  padding: 5px;
+  font-family: "Noto Sans KR";
+}
+
+.item.inputBox .projectCon {
+  width: 100%;
+  height: 150px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-top: 2px;
+  padding: 10px;
+  font-family: "Noto Sans KR";
+}
+
+.item.inputBox .projectTit:focus,
+.item.inputBox .projectCon:focus {
+  border: 1px solid #3b5999;
+}
