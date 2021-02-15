@@ -36,10 +36,11 @@
         $sch_pla=$sch_row['sch_pla'];
       ?>
       <!-- php line end-->
-      <div class="center">
+      <div class="center gridWrap">
           <div class="inputContainer">
               <?php
-                include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/grid_up.php"
+                include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/latest_date.php";
+                include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/grid_up.php";
               ?>
               <div class="item inputBox">
                 <form action="/myschedule/php/schedule_input.php" method="post" name="schInput">
