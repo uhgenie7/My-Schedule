@@ -58,6 +58,7 @@ header h1 {
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
+  padding: 20px 0;
 }
 
 .container .item {
@@ -231,7 +232,7 @@ footer {
   background-color: #3b5999;
   padding: 15px 0;
   text-align: center;
-  position: fixed;
+  _position: fixed;
   bottom: 0;
 }
 
