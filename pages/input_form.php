@@ -37,22 +37,32 @@
       ?>
       <!-- php line end-->
       <div class="center">
-        <form action="/myschedule/php/update_rate.php" method="get" name="updateRate">
           <div class="inputContainer">
               <?php
                 include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/grid_up.php"
               ?>
-              <div class="item"></div>
+              <div class="item inputBox">
+                <form action="/myschedule/php/schedule_input.php" method="post" name="schInput">
+                  <div class="projectBox">
+                    <select name="projectCate" id="projectCate" class="projectCate">
+                      <option value="dbProject">Database project</option>
+                      <option value="apiProject">API Project</option>
+                      <option value="renuwalProject">Renewal Project</option>
+                      <option value="webProject">Web Planning Project</option>
+                    </select>
+                    <input type="text" name="projectTit" id="projectTit" class="projectTit" placeholder="일정 요약을 입력해 주세요">
+                  </div>
+                  <textarea name="projectCon" id="projectCon" class="projectCon" placeholder="상세 일정을 작성해 주세요"></textarea>
+                </form>
+              </div>
               <!-- end of grid_up -->
               <div class="item btns">
-                <button type="submit">진행률 수정</button>
-                <button type="button">진행 상황 작성</button>
+                <button type="button" class="submitBtn">진행 상황 작성</button>
                 <button type="button">진행 상황 확인</button>
               </div>
               <!-- end of button -->
           </div>
           <!-- end of contatiner -->
-        </form>
       </div>
       <!-- end of center -->
       <?php
@@ -68,5 +78,21 @@
     <script src="/myschedule/js/piechart.js"></script>
     <script src="/myschedule/js/custom.js"></script>
     <script src="/myschedule/js/total_avg.js"></script>
+    <script>
+      let submitBtn = document.querySelector(".submitBtn");
+      submitBtn.addEventListener('click', function(){
+        if(!document.schInput.projectTit.value){
+          alert('일정 요약을 입력해주세요')
+          document.schInput.projectTit.focus();
+          return;
+        }
+        if(!document.schInput.projectCon.value){
+          alert('일정 내용을 입력해주세요')
+          document.schInput.projectCon.focus();
+          return;
+        }
+        document.schInput.submit();
+      });
+    </script>
   </body>
 </html>
