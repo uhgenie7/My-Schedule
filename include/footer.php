@@ -8,9 +8,11 @@
   const rateNum =document.querySelectorAll('.rateNum');
 
   if(pathname.includes('input_form')){
-    changeTit.innerText="Input Schedule";
+    changeTit.innerText="Schedule Input";
       for(let i=0; i<rateNum.length; i++){
       rateNum[i].readOnly=true;
     }
-  } 
+  } else if(pathname.includes('sch_view')){
+    changeTit.innerText="Schedule Board";
+  }
 </script>
