@@ -64,6 +64,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
     <script src="/myschedule/js/piechart.js"></script>
     <script src="/myschedule/js/custom.js"></script>
-    <script src="/myschedule/js/total_avg.js"></script>
+    <script src="/myschedule/js/total_avg.js" defer></script>
   </body>
 </html>
