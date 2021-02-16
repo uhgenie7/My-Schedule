@@ -66,6 +66,11 @@
   .item.boardBox .boardTable span {
     font-size: 12px;
   }
+
+  /* Detail view page style */
+  .item.viewBox .viewTable span {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -96,6 +101,23 @@
     width: 30%;
   }
 
+  /* Detail view page style */
+  .item.viewBox .viewTable span.boNum {
+    display: none;
+  }
+
+  .item.viewBox .viewTable span.boTit {
+    width: 30%;
+  }
+
+  .item.viewBox .viewTable span.boReg {
+    width: 30%;
+  }
+
+  .item.viewBox .detailTit h2 {
+    font-size: 14px;
+  }
+
   .categoryTabs {
     text-align: center;
   }
@@ -120,8 +142,11 @@
   }
 
   /* button style */
+  .btns {
+    display: flex;
+    width: 100%;
+  }
   .btns button {
-    width: 50%;
     padding: 10px 5px;
   }
 
@@ -142,6 +167,25 @@
     width: 60%;
   }
   .item.boardBox .boardTable span.boReg {
+    width: 40%;
+  }
+
+  /* Detail view page style */
+  .item.viewBox .viewTable span.boCate {
+    display: none;
+  }
+  .item.viewBox .viewTable span.boTit {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .item.viewBox .viewTable span.boCon {
+    width: 60%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .item.viewBox .viewTable span.boReg {
     width: 40%;
   }
 }

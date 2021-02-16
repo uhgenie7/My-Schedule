@@ -370,6 +370,9 @@ footer p {
 }
 .item.boardBox .boardTable span.boTit {
   width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .item.boardBox .boardTable span.boReg {
   width: 20%;
@@ -416,4 +419,85 @@ footer p {
 .categoryTabs a.active {
   background: #3b5999;
   color: #fff;
+}
+
+/* Detail view page style */
+.item.viewBox {
+  padding: 10px;
+}
+
+.item.viewBox .viewTable {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #3b5999;
+}
+
+.item.viewBox .viewTable li:nth-child(odd) {
+  background: #eee;
+}
+
+.item.viewBox .viewTable li.viewTitle {
+  background: #3b5999;
+}
+
+.item.viewBox .viewTable .viewTitle,
+.item.viewBox .viewTable .viewList {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  padding: 5px;
+}
+
+.item.viewBox .viewTable .viewTitle span {
+  color: #fff;
+}
+
+.item.viewBox .viewTable span {
+  text-align: center;
+  font-family: "Noto Sans KR";
+  padding: 8px 0;
+}
+
+.item.viewBox .viewTable span.boNum {
+  width: 10%;
+}
+.item.viewBox .viewTable span.boTit {
+  width: 20%;
+}
+.item.viewBox .viewTable span.boCon {
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /* 글자수 넘침 방지 */
+}
+
+.item.viewBox .viewTable .viewList span.boCon {
+  text-align: left;
+}
+
+.item.viewBox .viewTable em {
+  font-style: normal;
+  line-height: 2;
+}
+.item.viewBox .viewTable span.boReg {
+  width: 20%;
+}
+
+.item.viewBox .detailTit {
+  width: 100%;
+  height: auto;
+  padding-left: 15px;
+  border-left: 2px solid #3b5999;
+  margin-bottom: 10px;
+}
+
+.item.viewBox .detailTit h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3b5999;
+  font-family: "Noto Sans KR";
 }
