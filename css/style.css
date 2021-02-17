@@ -11,6 +11,7 @@ header .headerWrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 header .headerWrap a {
@@ -19,12 +20,13 @@ header .headerWrap a {
 }
 
 header .headerWrap .mIcon {
-  width: 30px;
+  width: 55px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   cursor: pointer;
+  padding: 10px;
 }
 
 header .mIcon span {
@@ -32,6 +34,7 @@ header .mIcon span {
   height: 2px;
   background: #fff;
   display: block;
+  transition: all 0.4s;
 }
 
 header .mIcon span:nth-child(2) {
@@ -43,11 +46,42 @@ header .mIcon span:nth-child(3) {
   width: 70%;
 }
 
+/* header .headerWrap .mIcon:hover span {
+  width: 100%;
+} */
+
+header .headerWrap .mIcon.on span {
+  width: 100%;
+}
+
 header h1,
 #title {
   font-weight: 400;
   font-size: 22px;
   padding: 10px 0;
+}
+
+/* Hidden Header Style */
+.hiddenHeader {
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+
+.hiddenHeader .depth-1 li {
+  margin-top: 1px;
+}
+
+.hiddenHeader .depth-1 li a {
+  display: block;
+  background: #3b5999;
+  color: #fff;
+  padding: 15px;
+  border: 1px solid #3b5999;
+}
+
+.hiddenHeader .depth-2 {
+  display: none;
 }
 
 /* container style */
