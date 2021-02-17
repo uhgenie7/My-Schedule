@@ -1,3 +1,4 @@
+<meta charset="UTF-8" />
 <?php
   $sch_num=1;
   $sch_db=$_REQUEST['sch_db_rate'];

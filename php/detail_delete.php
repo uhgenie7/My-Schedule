@@ -1,3 +1,4 @@
+<meta charset="UTF-8" />
 <?php
   $del_num=$_GET['num'];
   include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/db_conn.php";

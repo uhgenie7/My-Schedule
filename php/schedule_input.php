@@ -1,3 +1,4 @@
+<meta charset="UTF-8" />
 <?php
   $projectCate = $_POST['projectCate'];
   $projectTit = nl2br($_POST['projectTit']);
@@ -28,7 +29,7 @@ include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/db_conn.php";
   echo "
     <script>
       alert('진행 상황이 추가되었습니다');
-      location.href='/myschedule/pages/input_form.php';
+      location.href='/myschedule/pages/sch_view.php?key=view_all';
     </script>
     ";
 
