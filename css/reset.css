@@ -42,11 +42,8 @@ textarea {
   -webkit-appearance: none;
 }
 
-input[type="checkbox"],
-input[type="text"] {
+input[type="checkbox"] {
   -webkit-appearance: auto;
-  border-radius: 0;
-  border: 1px solid #252525;
 }
 
 input::placeholder,

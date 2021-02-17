@@ -2,6 +2,10 @@
   .center {
     padding: 0 25px;
   }
+
+  .hiddenHeader {
+    right: 25px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -106,6 +110,14 @@
     display: none;
   }
 
+  .item.viewBox .viewTable span.boCate {
+    display: none;
+  }
+
+  .item.viewBox .viewTable span.boCon {
+    display: 70%;
+  }
+
   .item.viewBox .viewTable span.boTit {
     width: 30%;
   }
@@ -120,6 +132,16 @@
 
   .categoryTabs {
     text-align: center;
+  }
+
+  .hiddenTit {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .hiddenCon {
+    width: 100%;
+    font-size: 12px;
   }
 }
 
@@ -146,7 +168,9 @@
     display: flex;
     width: 100%;
   }
-  .btns button {
+  .btns button,
+  .loadMore button,
+  .subBtn button {
     padding: 10px 5px;
   }
 
@@ -164,10 +188,10 @@
     display: none;
   }
   .item.boardBox .boardTable span.boTit {
-    width: 60%;
+    width: 70%;
   }
   .item.boardBox .boardTable span.boReg {
-    width: 40%;
+    width: 30%;
   }
 
   /* Detail view page style */
