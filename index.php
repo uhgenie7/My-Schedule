@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/myschedule/img/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/myschedule/img/favicon-16x16.png">
+    <link rel="manifest" href="/myschedule/img/manifest.json">
     <title>Schedule Dashboard</title>
     <!-- awesome font -->
     <script src="https://kit.fontawesome.com/4d645dbcdc.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="/myschedule/css/reset.css" />
+    <link rel="stylesheet" href="/myschedule/css/style.css" />
+    <link rel="stylesheet" href="/myschedule/css/media.css" />
+
   </head>
   <body>
     <!-- all contents are wrapped inside wrap -->
