@@ -32,8 +32,8 @@
         $sch_result=mysqli_query($dbConn, $sql);
         $sch_row=mysqli_fetch_array($sch_result);
 
-        $sch_db=$sch_row['sch_db'];
-        $sch_api=$sch_row['sch_api'];
+        $sch_cs=$sch_row['sch_cs'];
+        $sch_fw=$sch_row['sch_fw'];
         $sch_ren=$sch_row['sch_ren'];
         $sch_pla=$sch_row['sch_pla'];
       ?>

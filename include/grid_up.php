@@ -13,9 +13,9 @@
       <i class="fa fa-database"></i>
     </div>
     <div class="pfContents">
-      <h3>Database Project</h3>
+      <h3>CS Project</h3>
       <p>
-        Progress Rate : <input type="number" min="0" max="100" value="<?=$sch_db?>" class="rateNum" name="sch_db_rate">% || Last Update : <b><?=$db_date?></b>
+        Progress Rate : <input type="number" min="0" max="100" value="<?=$sch_cs?>" class="rateNum" name="sch_cs_rate">% || Last Update : <b><?=$cs_date?></b>
       </p>
       <div class="pfBarBox">
         <span class="pfBar"></span>
@@ -27,9 +27,9 @@
       <i class="fa fa-cloud-sun"></i>
     </div>
     <div class="pfContents">
-      <h3>API Project</h3>
+      <h3>FrameWork Project</h3>
       <p>
-        Progress Rate : <input type="number" min="0" max="100" value="<?=$sch_api?>" class="rateNum" name="sch_api_rate">% || Last Update : <b><?=$api_date?></b>
+        Progress Rate : <input type="number" min="0" max="100" value="<?=$sch_fw?>" class="rateNum" name="sch_fw_rate">% || Last Update : <b><?=$fw_date?></b>
       </p>
       <div class="pfBarBox">
         <span class="pfBar"></span>
@@ -55,7 +55,7 @@
       <i class="fa fa-bar-chart-o"></i>
     </div>
     <div class="pfContents">
-      <h3>Web Planning Project</h3>
+      <h3>Planning Project</h3>
       <p>
         Progress Rate : <input type="number" min="0" max="100" value="<?=$sch_pla?>" class="rateNum" name="sch_pla_rate">% || Last Update : <b><?=$web_date?></b>
       </p>

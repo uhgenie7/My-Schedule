@@ -12,6 +12,7 @@
   }
 ?>
 
+
 <header>
   <div class="center headerWrap">
     <a href="/myschedule/php/sign_out.php"><i class="fa fa-sign-out"></i></a>
@@ -27,15 +28,32 @@
         <li><a href="/myschedule/pages/input_form.php"><i class="fa fa-pencil"></i></a></li>
         <li>
           <a href="/myschedule/pages/sch_view.php?key=view_all"><i class="fa fa-search"></i></a>
-          <ul class="depth-2">
-            <li><a href="#">ALL</a></li>
-            <li><a href="#">Database</a></li>
-            <li><a href="#">API</a></li>
-            <li><a href="#">Renewal</a></li>
-            <li><a href="#">WEB Planning</a></li>
-          </ul>
         </li>
       </ul>
     </div>
   </div>
 </header>
+
+<script>
+  const pathname = window.location.pathname;
+  const changeTit = document.querySelector('#title');
+  const rateNum =document.querySelectorAll('.rateNum');
+
+  if(pathname.includes('input_form')){
+    changeTit.innerText="Schedule Input";
+      for(let i=0; i<rateNum.length; i++){
+      rateNum[i].readOnly=true;
+      //input 안의 숫자 읽기만 가능
+    }
+  } else if(pathname.includes('sch_view')){
+    changeTit.innerText="Schedule Board";
+      for(let i=0; i<rateNum.length; i++){
+      rateNum[i].readOnly=true;
+    }
+  } else if(pathname.includes('detail_view')){
+    changeTit.innerText="Detail Schedule";
+      for(let i=0; i<rateNum.length; i++){
+      rateNum[i].readOnly=true;
+    }
+  }
+</script>

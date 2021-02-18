@@ -1,21 +1,21 @@
 <?php
-  // database project latest date
-  $db_date_sql="select * from sch_txt where sch_txt_cate='DBProject' order by sch_txt_num desc limit 1";
-  $db_date_result=mysqli_query($dbConn, $db_date_sql);
-  $db_date_row=mysqli_fetch_array($db_date_result);
-  if(!$db_date_row){
-    $db_date='NO DATA';
+  // cs project latest date
+  $cs_date_sql="select * from sch_txt where sch_txt_cate='CSProject' order by sch_txt_num desc limit 1";
+  $cs_date_result=mysqli_query($dbConn, $cs_date_sql);
+  $cs_date_row=mysqli_fetch_array($cs_date_result);
+  if(!$cs_date_row){
+    $cs_date='NO DATA';
   } else {
-    $db_date=$db_date_row['sch_txt_reg'];  
+    $cs_date=$cs_date_row['sch_txt_reg'];  
   }  
-  // apibase project latest date
-  $api_date_sql="select * from sch_txt where sch_txt_cate='ApiProject' order by sch_txt_num desc limit 1";
-  $api_date_result=mysqli_query($dbConn, $api_date_sql);
-  $api_date_row=mysqli_fetch_array($api_date_result);
-  if(!$api_date_row){
-    $api_date='NO DATA';
+  // framework base project latest date
+  $fw_date_sql="select * from sch_txt where sch_txt_cate='FwProject' order by sch_txt_num desc limit 1";
+  $fw_date_result=mysqli_query($dbConn, $fw_date_sql);
+  $fw_date_row=mysqli_fetch_array($fw_date_result);
+  if(!$fw_date_row){
+    $fw_date='NO DATA';
   } else {
-    $api_date=$api_date_row['sch_txt_reg'];  
+    $fw_date=$fw_date_row['sch_txt_reg'];  
   }  
   // renuwal project latest date
   $ren_date_sql="select * from sch_txt where sch_txt_cate='RenewalProject' order by sch_txt_num desc limit 1";

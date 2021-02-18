@@ -1,7 +1,7 @@
   <div class="categoryTabs">
     <a href="/myschedule/pages/sch_view.php?key=view_all" class="active">All</a>
-    <a href="/myschedule/pages/sch_view.php?key=view_db">Database</a>
-    <a href="/myschedule/pages/sch_view.php?key=view_api">API</a>
+    <a href="/myschedule/pages/sch_view.php?key=view_cs">CS</a>
+    <a href="/myschedule/pages/sch_view.php?key=view_fw">FrameWork</a>
     <a href="/myschedule/pages/sch_view.php?key=view_renewal">Renewal</a>
     <a href="/myschedule/pages/sch_view.php?key=view_web">Web Planning</a>
   </div>

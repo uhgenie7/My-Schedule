@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Input Board</title>
     <!-- awesome font -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    /> -->
     <script src="https://kit.fontawesome.com/4d645dbcdc.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="/myschedule/css/reset.css" />
@@ -30,8 +26,8 @@
         $sch_result=mysqli_query($dbConn, $sql);
         $sch_row=mysqli_fetch_array($sch_result);
 
-        $sch_db=$sch_row['sch_db'];
-        $sch_api=$sch_row['sch_api'];
+        $sch_cs=$sch_row['sch_cs'];
+        $sch_fw=$sch_row['sch_fw'];
         $sch_ren=$sch_row['sch_ren'];
         $sch_pla=$sch_row['sch_pla'];
       ?>
@@ -46,10 +42,10 @@
                 <form action="/myschedule/php/schedule_input.php" method="post" name="schInput">
                   <div class="projectBox">
                     <select name="projectCate" id="projectCate" class="projectCate">
-                      <option value="DBProject">Database project</option>
-                      <option value="APIProject">API Project</option>
+                      <option value="CSProject">CS Project</option>
+                      <option value="FwProject">FrameWork Project</option>
                       <option value="RenewalProject">Renewal Project</option>
-                      <option value="WebProject">Web Planning Project</option>
+                      <option value="WebProject">Planning Project</option>
                     </select>
                     <input type="text" name="projectTit" id="projectTit" class="projectTit" placeholder="일정 요약을 입력해 주세요">
                   </div>

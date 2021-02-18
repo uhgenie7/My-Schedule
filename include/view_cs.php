@@ -1,7 +1,7 @@
   <div class="categoryTabs">
     <a href="/myschedule/pages/sch_view.php?key=view_all">All</a>
-    <a href="/myschedule/pages/sch_view.php?key=view_db">Database</a>
-    <a href="/myschedule/pages/sch_view.php?key=view_api" class="active">API</a>
+    <a href="/myschedule/pages/sch_view.php?key=view_cs"  class="active">CS</a>
+    <a href="/myschedule/pages/sch_view.php?key=view_fw">FrameWork</a>
     <a href="/myschedule/pages/sch_view.php?key=view_renewal">Renewal</a>
     <a href="/myschedule/pages/sch_view.php?key=view_web">Web Planning</a>
   </div>
@@ -15,7 +15,7 @@
 
   <?php
     include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/db_conn.php";
-    $sql = "select * from sch_txt where sch_txt_cate='ApiProject' order by sch_txt_num desc";
+    $sql = "select * from sch_txt where sch_txt_cate='DBProject' order by sch_txt_num desc";
     $board_result=mysqli_query($dbConn, $sql);
     while($board_row=mysqli_fetch_array($board_result)){
       $bo_num=$board_row['sch_txt_num'];
