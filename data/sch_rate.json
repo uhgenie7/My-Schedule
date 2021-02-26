@@ -1,8 +1,8 @@
 [
     {
-        "cs_rate": "43",
-        "fw_rate": "19",
-        "ren_rate": "20",
-        "pla_rate": "20"
+        "cs_rate": "50",
+        "fw_rate": "100",
+        "ren_rate": "100",
+        "pla_rate": "100"
     }
 ]
