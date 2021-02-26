@@ -15,7 +15,7 @@
 
   <?php
     include $_SERVER["DOCUMENT_ROOT"]."/myschedule/include/db_conn.php";
-    $sql = "select * from sch_txt where sch_txt_cate='ApiProject' order by sch_txt_num desc";
+    $sql = "select * from sch_txt where sch_txt_cate='FwProject' order by sch_txt_num desc";
     $board_result=mysqli_query($dbConn, $sql);
     while($board_row=mysqli_fetch_array($board_result)){
       $bo_num=$board_row['sch_txt_num'];
