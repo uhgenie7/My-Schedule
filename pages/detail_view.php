@@ -67,7 +67,7 @@
                         <li class="viewList">
                           <span class="boNum"><?=$bo_num?></span>
                           <span class="boTit">
-                            <input type="text" value="<?=$bo_cate?>" class="hiddenTit" name="updateTit">
+                            <input type="text" value="<?=$bo_tit?>" class="hiddenTit" name="updateTit">
                             <em><?=$bo_tit?></em>
                           </span>
                           <span class="boCon">
