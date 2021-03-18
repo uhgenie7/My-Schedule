@@ -40,3 +40,7 @@ http://uhj1993.dothome.co.kr/myschedule/
 | ------ | ------ |
 | easy-pie-chart | [https://github.com/rendro/easy-pie-chart](https://github.com/rendro/easy-pie-chart) |
 
+
+## 추후 추가될 기능
+---
+SESSION 인증 방식이 아닌, 네이버 로그인 / 구글 / 카카오 중 하나를 택하여 API 로그인 버튼 추가 
