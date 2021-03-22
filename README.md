@@ -3,6 +3,12 @@
 #### _스케쥴 관리 프로젝트_
 ![mysche1](https://user-images.githubusercontent.com/72803184/109382414-a7be1280-7923-11eb-9464-cd6511eda896.gif)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-323330?style=flat-square&logo=PHP&logoColor=777BB4" height="24" />
+  <img src="https://img.shields.io/badge/CSS3-323330?style=flat-square&logo=CSS3&logoColor=1572B6" height="24" />
+  <img src="https://img.shields.io/badge/Javascript-323330?style=flat-square&logo=JavaScript&logoColor=f0db4f" height="24" />
+</p>
+
 My Schedule은 각 카테고리 별 달성률을 표시해줄 뿐만 아니라 각각의 달성률을 전체 그래프로 표현도 가능합니다.
 진행상황을 작성하여 각 카테고리 별 일정을 기록할 수 있으며 진행상황을 게시판 형식으로 확인이 가능합니다.
 또한 수정 사항이 생길 경우 제목을 클릭하여 더 상세하게 작성하거나 수정할 수도 있습니다.
