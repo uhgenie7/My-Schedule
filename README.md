@@ -44,3 +44,8 @@ http://uhj1993.dothome.co.kr/myschedule/
 | ------ | ------ |
 | easy-pie-chart | [https://github.com/rendro/easy-pie-chart](https://github.com/rendro/easy-pie-chart) |
 
+
+## 관리자 비밀번호
+
+1234
+
