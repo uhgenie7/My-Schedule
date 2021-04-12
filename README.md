@@ -15,7 +15,7 @@ My Schedule은 각 카테고리 별 달성률을 표시해줄 뿐만 아니라 �
 
 
 ## 사이트
-http://uhj1993.dothome.co.kr/myschedule/
+http://devuhj.com/myschedule/
 
 ## 주요 특징
 
